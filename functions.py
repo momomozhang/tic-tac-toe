@@ -4,8 +4,6 @@ Tic-Tac-Toe Game
 A simple implementation of the classic Tic-Tac-Toe game with a command-line interface.
 Players take turns marking X and O on a 3x3 grid, aiming to get three of their marks in a row.
 """
-
-import os
 import random
 
 # Set up the data structure
@@ -96,7 +94,6 @@ def replay():
     """Ask if the user wants to play again"""
     response = input('Do you want to play again? Enter Yes or No: ').lower()
     if response.startswith('y'):
-        print(f"\nYaaay! Let's play again!")
         return True
     else:
         print(f"\nYou don't want to play again? Sad :(")
